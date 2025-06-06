@@ -173,8 +173,8 @@ html{
     flex-wrap: wrap;
 }
 .sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     background-color: #252A2E;
     border-radius: 10px;
     margin: 0 15px 15px 0;
@@ -196,7 +196,7 @@ html{
     border: 2px solid #fff;
     width: fit-content;
     display: block;
-    margin: 20px auto;
+    margin: 80px auto;
     padding: 10px 22px;
     font-size: 16px;
     color: #fff;
@@ -214,6 +214,33 @@ html{
     transition: 1s;
 }
 .sobremi button:hover .overlay{
+    width: 100%;
+}
+
+.btn-cv {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 80px auto 0 auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.btn-cv .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.btn-cv:hover .overlay {
     width: 100%;
 }
 /* SECCION S K I L L S */
@@ -355,7 +382,7 @@ html{
 }
 @keyframes dedicacion {
     0%{width: 0%;}
-    100%{width: 65%;}
+    100%{width: 95%;}
 }
 
 .skills .skill .proyect{
@@ -401,6 +428,9 @@ html{
 }
 .curriculum .fila .derecha{
     border-left: 2px solid #252A2E;
+}
+.curriculum .fila .derecha h3 {
+    text-align: right;
 }
 .curriculum .fila .item{
     padding: 25px;
@@ -572,6 +602,13 @@ html{
     font-size: 18px;
     text-align: center;
 }
+
+@media screen and (min-width: 981px) {
+    .contacto .col input, .contacto .col textarea {
+        padding: 24px;
+        font-size: 22px;
+    }
+}
 .contacto button{
     cursor: pointer;
     background-color: transparent;
@@ -687,8 +724,49 @@ footer .arriba{
     .sobremi .fila{
         display: block;
     }
+    
     .sobremi .fila .col{
         width: fit-content;
+    }
+
+    .sobremi .fila .col:nth-child(1) {
+        text-align: left;
+        margin-left: 0;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .sobremi .fila .col:nth-child(1) h3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .sobremi .fila .col:nth-child(2) h3 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .sobremi .fila .col:nth-child(1) ul li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .sobremi .fila .col:nth-child(1) ul li strong {
+        width: 100px;
+        display: inline-block;
+        color: #1CB698;
+        font-weight: 600;
+    }
+
+    .sobremi .fila .col:nth-child(1) ul li span {
+        background-color: #1CB698;
+        padding: 3px 8px;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-left: 10px;
+        color: #fff;
     }
 
     .skills .fila{
@@ -701,6 +779,12 @@ footer .arriba{
         width: 100%;
     }
 
+    .contenedor-intereses{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
     .curriculum .fila{
         display: block;
     }

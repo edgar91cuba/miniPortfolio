@@ -87,10 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 from_email: formData['Dirección de correo'],
                 subject: formData['Tema'],
                 message: formData['Mensaje'],
-                to_email: 'edgar91cuba@gmail.com' // Your personal email
+                to_email: 'edgar91cuba@gmail.com' 
             };
 
-            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            emailjs.send('service_fz9xrdj', 'template_yp8truf', templateParams)
                 .then(function(response) {
                     alert('Mensaje enviado correctamente. ¡Gracias por contactarme!');
                     // Limpiar los campos del formulario una vez envíe
